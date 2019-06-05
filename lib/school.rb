@@ -22,8 +22,11 @@ class School
     end
     
     def sort
-
+        roster.each do  |grade, class_hash| 
+            class_hash.sort!
+        end
     end
+
 end
 
 school = School.new("Bayside High School")
